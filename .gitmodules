@@ -1,0 +1,4 @@
+[submodule "public"]
+	path = public
+	url = git@github.com:m0ai/m0ai.github.io.git
+	branch = master

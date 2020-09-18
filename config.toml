@@ -1,0 +1,15 @@
+baseURL = "http://m0ai.github.io/"
+languageCode = "ko-kr"
+title = "m0ai 의 아카이브"
+theme = "ananke"
+
+[taxonomies]
+   tag = "tags"
+   category = "categories"
+
+[params]
+  github = "https://github.com/m0ai"
+  gitlab = "https://gitlab.com/m0ai"
+  background_color_class = "bg-black"
+  featured_image = "/images/moai.jpg"
+  recent_posts_number = 5
