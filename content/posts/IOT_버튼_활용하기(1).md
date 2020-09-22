@@ -1,7 +1,7 @@
 ---
 title: "놀고 있는 AWS IOT Button을 슬랙 메세지 보내기"
 date: 2019-06-30T22:20:13+09:00
-draft: false
+draft: true
 categories: [development, aws]
 tags: [aws, iot, terraform, python]
 ---
@@ -50,6 +50,7 @@ make publish   # lambda에 업로드할 zip을 생성합니다.
 file lambda.zip
 ```
 람다 함수를 배포하기 위해 필요한 패키지와 업로드할 .zip 파일을 생성해놓는 작업을 진행합니다. 위 스크립트를 실행하여 생성한 lambda.zip 은 단순하게 내가 원하는 슬랙 워크스페이스에 메세지를 보내는 간단한 일을 하고 있습니다. 만약 해당 람다 함수의 코드가 궁금하면 (lambda.py) 을 참고해주세요.
+
 (이 글을 읽는 사람은 빠르게 IoT Button을 사용해보고 싶을테니 우리가 만든 람다에 대해서는 간단하게 설명하였습니다.)
 
 람다 함수를 당장이라도 업로드하여 우리 손 안에 있는 IoT 버튼을 누르고 싶지만, 어떤 슬랙 채널에 메세지를 보낼지 어떤 메세지 내용을 보낼지 정의하지 않았습니다. 해당 자원은 테라폼에서 관리되고 있으므로 `terraform/locals.tf` 파일을 수정하여 우리가 원하는 동작을 하도록 수정해야 합니다.
