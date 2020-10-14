@@ -2,3 +2,8 @@
 	path = public
 	url = git@github.com:m0ai/m0ai.github.io.git
 	branch = master
+
+[submodule "ananke"]
+	path = themes/ananke
+	url = git@github.com:theNewDynamic/gohugo-theme-ananke.git
+	branch = master
