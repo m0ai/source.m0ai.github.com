@@ -1,4 +1,4 @@
-name: Publish & Deploy Posts
+name: Posts Publish & Deploy 
 on:
   push:
     branches: [ master ]
@@ -9,5 +9,10 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      - name: Run a one-line script
-        run: ./deploy.sh
+      - uses: oleksiyrudenko/gha-git-credentials@v1
+      - name: Publish And Deploy
+        with:
+          name: 'm0ai'
+          email: 'frozenmoai@gmail.com'
+          token: '${{ secrets.GITHUB_TOKEN }}'
+      - run: ./deploy.sh
