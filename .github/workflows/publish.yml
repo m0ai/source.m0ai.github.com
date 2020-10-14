@@ -9,8 +9,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      - uses: oleksiyrudenko/gha-git-credentials@v1
       - name: Publish And Deploy
+        uses: oleksiyrudenko/gha-git-credentials@v1
         with:
           name: 'm0ai'
           email: 'frozenmoai@gmail.com'
