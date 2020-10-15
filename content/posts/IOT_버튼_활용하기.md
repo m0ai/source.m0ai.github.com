@@ -103,6 +103,10 @@ terraform apply
 
 ![image-20201015031139768](https://github.com/m0ai/IotButton2Slack/raw/master/img/result.png)
 
+
+
+> 전체 코드는 [github.com/m0ai/IotButton2Slack](https://github.com/m0ai/IotButton2Slack/)에서 확인 할 수 있습니다. 
+
 ## Inspired by
 
 - [우아한 형제들 - 차임벨](http://woowabros.github.io/study/2016/10/28/woowahan_chime_bell.html)
